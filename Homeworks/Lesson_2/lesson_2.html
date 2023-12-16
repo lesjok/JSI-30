@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main id="target" class="target" name="target"></main>
+    <article></article>
+    <footer></footer>
+    <script>
+      const main1 = document.querySelector('.target');
+      console.log('main1', main1); 
+      const main2 = document.querySelector('#target');
+      console.log('main2', main2); 
+      const main3 = document.querySelector("main");
+      console.log('main3', main3);
+      const main4 = document.getElementById('target');
+      console.log('main4', main4); 
+      const main5 = document.getElementsByClassName('target')[0];
+      console.log('main5', main5); 
+      const main6 = document.getElementsByTagName('main')[0];
+      console.log('main6', main6);
+      const main7 = document.getElementsByTagName('header')[0].nextElementSibling;
+      console.log('main7', main7); 
+      const main8 = document.getElementsByTagName('body')[0].children[1];
+      console.log('main8', main8); 
+      const main9 = document.getElementsByTagName('article')[0].previousElementSibling;
+      console.log('main9', main9);
+      const main10 = document.getElementsByName('target')[0];
+      console.log('main10', main10);
+      const main11 = document.querySelectorAll('.target')[0];
+      console.log('main11', main11);
+      const main12 = document.getElementsByTagName('body')[0].firstElementChild.nextElementSibling;
+      console.log('main12', main12); 
+    </script>
+  </body>
+</html>
